@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Shan Ali</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#dayscounter">Days of life calculater</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Shan Ali</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#contact">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/hello-png.png" alt="hello text">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">I'm</p>
+            <h1 class="title">Shan Ali</h1>
+            <p class="section-text-p2">Awesome!</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/ig-icon.png"
+                     alt="My instagram profile"
+                     class="icon"
+                     onclick="location.href='https://instagram.com/thesailingpages'"
+                 />
+                <img src="./assets/x-icon.png"
+                     alt="My twitter profile"
+                     class="icon"
+                     onclick="location.href='https://x.com/byshanali'"
+                 />
+            </div>
+        </div>
+    </section>
+    <section id="dayscounter">
+        <h1 class="title-2">Calculate how many days you lived. &#128340;</h1>
+        <div class="dayslived">
+            <form onsubmit="calculateDaysLived(event)">
+                <h3 id="heading">Enter your date of birth:</h3>
+                <br>
+                <input type="text" id="birthDate" placeholder="YYYY, M, DD" title="YYYY, M, DD">
+                <br>
+                <button class="btn btn-color-2" onclick="calculateDaysLived()">Enter</button>
+            </form>
+            <a onclick="reset()">Reset</a> 
+        </div>
+    </section>
+    <section id="contact">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">shanalimp@gmail.com</a></p>
+          </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &#169; 2024 Shan Ali. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
